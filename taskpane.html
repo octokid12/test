@@ -10,7 +10,7 @@
 <body>
     <h1>Party Mode!</h1>
     <script>
-        Office.onReady(() => {
+        Office.onReady((info) => {
             setInterval(() => {
                 const colors = ['#FF0000', '#00FF00', '#0000FF', '#FFFF00', '#FF00FF', '#00FFFF'];
                 document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
