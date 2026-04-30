@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+    <style>
+        body { transition: background-color 0.5s ease; height: 100vh; margin: 0; display: flex; justify-content: center; align-items: center; font-family: sans-serif; }
+    </style>
+</head>
+<body>
+    <h1>Party Mode!</h1>
+    <script>
+        Office.onReady(() => {
+            setInterval(() => {
+                const colors = ['#FF0000', '#00FF00', '#0000FF', '#FFFF00', '#FF00FF', '#00FFFF'];
+                document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
